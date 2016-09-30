@@ -27,5 +27,5 @@ nav .brand-logo {
 }
 
 nav ul{
-	transform: translateX(6%);
+	transform: translateX(100px);
 }
