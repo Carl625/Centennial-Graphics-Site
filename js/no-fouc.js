@@ -4,7 +4,7 @@
 document.documentElement.className = 'no-fouc';
 
 // called when page is completely finished loading
-$(window).load(function()
+$(document).load(function()
 {
 	$('.no-fouc').removeClass('no-fouc');	// show webpage
 	console.log("Page loaded");				// for debugging
