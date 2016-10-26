@@ -1,7 +1,14 @@
+* {
+	/* make font thinner */
+	font-weight: 300 !important;
+}
+
 body {
 	/* make room for navbar	*/
 	padding-top: 100px;
 }
+
+/* the rest of this file is for the navbar */
 
 nav {
     height: 100px;
