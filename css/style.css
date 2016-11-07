@@ -1,23 +1,32 @@
 * {
 	/* make font thinner */
-	font-weight: 300 !important;
+	font-weight: 300	!important;
 }
 
-water-image {
+.water-image {
+	/* allows our absolue-positioned text to overlay */
 	position: relative;
 }
 
-div h2 {
+.water-image h3 {
+	/* attributes */
+	color: white;
+	font-size: 265%;
+	background-color:	#424242;	/* same color as  */
+	border: 15px solid	#424242;	/* gray darken-3  */
+
+	/* position text on top of image */
 	position: absolute;
-	top: 800px;
+	top: 250px;
 	left: 50px;
 }
 
+/* the rest of this file is for the navbar */
+
 body {
 	/* make room for navbar	*/
-	padding-top: 100px;}
-
-/* the rest of this file is for the navbar */
+	padding-top: 100px;
+}
 
 nav {
     height: 100px;
