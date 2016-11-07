@@ -3,6 +3,8 @@
 	font-weight: 300	!important;
 }
 
+/* water.png on index.html */
+
 .water-image {
 	/* allows our absolue-positioned text to overlay */
 	position: relative;
@@ -11,7 +13,7 @@
 .water-image h3 {
 	/* attributes */
 	color: white;
-	font-size: 265%;
+	font-size: 260%;
 	background-color:	#424242;	/* same color as  */
 	border: 15px solid	#424242;	/* gray darken-3  */
 
@@ -21,7 +23,7 @@
 	left: 50px;
 }
 
-/* the rest of this file is for the navbar */
+/* the navbar */
 
 body {
 	/* make room for navbar	*/
