@@ -45,7 +45,18 @@
 
 		<!--Page Start-->
 		<div class="water-image">
-			<img class="responsive-img" src="images/water.png">
+
+			<!--Responsive images-->
+			<script type="text/javascript">
+				if (window.innerWidth <= 480) {
+					document.write('<img class="responsive-img" src="images/water/water480.png">');
+				} else if (window.innerWidth <= 1368) {
+					document.write('<img class="responsive-img" src="images/water/water1368.png">');
+				} else {
+					document.write('<img class="responsive-img" src="images/water/water1920.png">');
+				}
+			</script>
+
 			<h3 class="hide-on-small-only">Beautiful and Free<br>Digital Designs</h3>
 		</div>
 
