@@ -46,14 +46,46 @@
 		<!--Page Start-->
 		<div class="water-image">
 
-			<!--Responsive images-->
+			<!--Select banner image based on scren size-->
 			<script type="text/javascript">
 				if (window.innerWidth <= 480) {
-					document.write('<img class="responsive-img" src="images/water/water480.png">');
-				} else if (window.innerWidth <= 1368) {
-					document.write('<img class="responsive-img" src="images/water/water1368.png">');
-				} else {
-					document.write('<img class="responsive-img" src="images/water/water1920.png">');
+					document.write('<'
+						+'img class="responsive-img"'
+						+'id="water-banner"'
+						+'src="images/water/water480.png">'
+					);
+				}
+
+				else if (window.innerWidth <= 720) {
+					document.write('<'
+						+'img class="responsive-img"'
+						+'id="water-banner"'
+						+'src="images/water/water720.png">'
+					);
+				}
+
+				else if (window.innerWidth <= 1368) {
+					document.write('<'
+						+'img class="responsive-img"'
+						+'id="water-banner"'
+						+'src="images/water/water1368.png">'
+					);
+				}
+
+				else if (window.innerWidth <= 1920) {
+					document.write('<'
+						+'img class="responsive-img"'
+						+'id="water-banner"'
+						+'src="images/water/water1920.png">'
+					);
+				}
+
+				else {
+					document.write('<'
+						+'img class="responsive-img"'
+						+'id="water-banner"'
+						+'src="images/water/water3835.png">'
+					);
 				}
 			</script>
 
@@ -104,5 +136,31 @@
 
 		<!--Import script.js-->
 		<script type="text/javascript" src="js/script.js"></script>
+
+		<!--Download new banner image when screen resizes-->
+		<script type="text/javascript">
+			$(window).on('resize', function()
+			{
+				if (window.innerWidth <= 480) {
+					document.getElementById("water-banner").src="images/water/water480.png";
+				}
+
+				else if (window.innerWidth <= 720) {
+					document.getElementById("water-banner").src="images/water/water720.png";
+				}
+
+				else if (window.innerWidth <= 1368) {
+					document.getElementById("water-banner").src="images/water/water1368.png";
+				}
+
+				else if (window.innerWidth <= 1920) {
+					document.getElementById("water-banner").src="images/water/water1920.png";
+				}
+
+				else {
+					document.getElementById("water-banner").src="images/water/water3835.png";
+				}
+			});
+		</script>
 	</body>
 </html>
