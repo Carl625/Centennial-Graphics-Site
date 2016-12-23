@@ -10,14 +10,14 @@
 	<!--Works Page-->
 	<url>
 		<loc>http://appliedvisuals.x10host.com/works.html</loc>
-		<changefreq>daily</changefreq>
+		<changefreq>weekly</changefreq>
 		<priority>0.8</priority>
 	</url>
 
 	<!--About Page-->
 	<url>
 		<loc>http://appliedvisuals.x10host.com/about.html</loc>
-		<changefreq>monthly</changefreq>
-		<priority>0.75</priority>
+		<changefreq>weekly</changefreq>
+		<priority>0.8</priority>
 	</url>
 </urlset>
