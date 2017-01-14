@@ -9,14 +9,14 @@
 
 	<!--Works Page-->
 	<url>
-		<loc>http://appliedvisuals.x10host.com/works.html</loc>
+		<loc>http://appliedvisuals.x10host.com/works/</loc>
 		<changefreq>weekly</changefreq>
 		<priority>0.8</priority>
 	</url>
 
 	<!--About Page-->
 	<url>
-		<loc>http://appliedvisuals.x10host.com/about.html</loc>
+		<loc>http://appliedvisuals.x10host.com/about/</loc>
 		<changefreq>weekly</changefreq>
 		<priority>0.8</priority>
 	</url>
