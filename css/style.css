@@ -3,6 +3,13 @@
 	font-weight: 300	!important;
 }
 
+.carousel {
+	width: 960px !important;
+	height: 540px !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+
 /* water.png on index.html */
 
 .water-image {
