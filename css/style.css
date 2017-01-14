@@ -3,7 +3,9 @@
 	font-weight: 300	!important;
 }
 
-.carousel {
+/* website carousel on index.html */
+
+ .carousel-slider {
 	width: 960px !important;
 	height: 540px !important;
 	margin-left: auto !important;
