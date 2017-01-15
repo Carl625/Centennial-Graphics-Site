@@ -28,11 +28,17 @@
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 
 		<script type="text/javascript">
+
 		//gets the viewport size with device:pixel ratio taken into account
 		function getViewportSize() {
 			//window.innerWidth is the viewport size
 			//window.devicePixelRatio is the ratio between the requested viewport and the real viewport
 			return window.innerWidth * window.devicePixelRatio;
+		}
+
+		var isMouseOverCarousel = false;
+		function mouseOverCarousel(n) {
+			isMouseOverCarousel = n;
 		}
 		</script>
 	</head>
@@ -124,7 +130,7 @@
 		</div>
 
 		<!--Website Gallery-->
-		<div class="carousel carousel-slider">
+		<div class="carousel carousel-slider" onmouseover="mouseOverCarousel(true);" onmouseout="mouseOverCarousel(false);">
 			<a class="carousel-item" href="http://chs-fbla.weebly.com/"><img src="/images/works/websites/Centennial FBLA.png"></a>
 			<a class="carousel-item" href="http://chseagletime.com/"><img src="/images/works/websites/Eagle Time 2017.png"></a>
 			<a class="carousel-item" href="http://appliedvisuals.x10host.com/"><img src="/images/works/websites/Applied Visuals.png"></a>
@@ -167,6 +173,12 @@
 		$(document).ready(function() {
 			$(".button-collapse").sideNav();
 			$(".carousel.carousel-slider").carousel({full_width: true});
+
+			window.setInterval(function() {
+				if (!isMouseOverCarousel) {
+					$(".carousel.carousel-slider").carousel("next");
+				}
+			}, 4500);
 		});
 
 		//resizes water-banner
