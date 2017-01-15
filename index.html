@@ -27,13 +27,13 @@
 		<!--Import style.css-->
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 
-		<!--Gets the viewport size with device:pixel ratio taken into account-->
 		<script type="text/javascript">
-			function getViewportSize() {
-				//window.innerWidth is the viewport size
-				//window.devicePixelRatio is the ratio between the requested viewport and the real viewport
-				return window.innerWidth * window.devicePixelRatio;
-			}
+		//gets the viewport size with device:pixel ratio taken into account
+		function getViewportSize() {
+			//window.innerWidth is the viewport size
+			//window.devicePixelRatio is the ratio between the requested viewport and the real viewport
+			return window.innerWidth * window.devicePixelRatio;
+		}
 		</script>
 	</head>
 
@@ -69,46 +69,46 @@
 
 			<!--Select banner image based on scren size-->
 			<script type="text/javascript">
-				if (getViewportSize() <= 480) {
-					document.write('<'
-						+'img class="responsive-img"'
-						+'id="water-banner"'
-						+'src="images/water/water480.png">'
-					);
-				}
+			if (getViewportSize() <= 480) {
+				document.write('<'
+					+'img class="responsive-img"'
+					+'id="water-banner"'
+					+'src="images/water/water480.png">'
+				);
+			}
 
-				else if (getViewportSize() <= 720) {
-					document.write('<'
-						+'img class="responsive-img"'
-						+'id="water-banner"'
-						+'src="images/water/water720.png">'
-					);
-				}
+			else if (getViewportSize() <= 720) {
+				document.write('<'
+					+'img class="responsive-img"'
+					+'id="water-banner"'
+					+'src="images/water/water720.png">'
+				);
+			}
 
-				else if (getViewportSize() <= 1368) {
-					document.write('<'
-						+'img class="responsive-img"'
-						+'id="water-banner"'
-						+'src="images/water/water1368.png">'
-					);
-				}
+			else if (getViewportSize() <= 1368) {
+				document.write('<'
+					+'img class="responsive-img"'
+					+'id="water-banner"'
+					+'src="images/water/water1368.png">'
+				);
+			}
 
-				else if (getViewportSize() <= 1920) {
-					document.write('<'
-						+'img class="responsive-img"'
-						+'id="water-banner"'
-						+'src="images/water/water1920.png">'
-					);
-				}
+			else if (getViewportSize() <= 1920) {
+				document.write('<'
+					+'img class="responsive-img"'
+					+'id="water-banner"'
+					+'src="images/water/water1920.png">'
+				);
+			}
 
-				else {
-					// I hope you have fast internet
-					document.write('<'
-						+'img class="responsive-img"'
-						+'id="water-banner"'
-						+'src="images/water/water3835.png">'
-					);
-				}
+			else {
+				// I hope you have fast internet
+				document.write('<'
+					+'img class="responsive-img"'
+					+'id="water-banner"'
+					+'src="images/water/water3835.png">'
+				);
+			}
 			</script>
 
 			<h3 class="hide-on-small-only">Beautiful and Free<br>Digital Designs</h3>
@@ -162,33 +162,33 @@
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 		<script type="text/javascript" src="js/materialize.min.js"></script>
 
-		<!--Import script.js-->
-		<script type="text/javascript" src="js/script.js"></script>
-
-		<!--Download new banner image when screen resizes-->
 		<script type="text/javascript">
-			$(window).on('resize', function()
-			{
-				if (getViewportSize() <= 480) {
-					document.getElementById("water-banner").src="images/water/water480.png";
-				}
 
-				else if (getViewportSize() <= 720) {
-					document.getElementById("water-banner").src="images/water/water720.png";
-				}
+		$(document).ready(function() {
+			$(".button-collapse").sideNav();
+			$(".carousel.carousel-slider").carousel({full_width: true});
+		});
 
-				else if (getViewportSize() <= 1368) {
-					document.getElementById("water-banner").src="images/water/water1368.png";
-				}
+		//resizes water-banner
+		$(window).on('resize', function()
+		{
+			if (getViewportSize() <= 480) {
+				document.getElementById("water-banner").src="images/water/water480.png";
+			}
+			else if (getViewportSize() <= 720) {
+				document.getElementById("water-banner").src="images/water/water720.png";
+			}
+			else if (getViewportSize() <= 1368) {
+				document.getElementById("water-banner").src="images/water/water1368.png";
+			}
+			else if (getViewportSize() <= 1920) {
+				document.getElementById("water-banner").src="images/water/water1920.png";
+			}
+			else {
+				document.getElementById("water-banner").src="images/water/water3835.png";
+			}
+		});
 
-				else if (getViewportSize() <= 1920) {
-					document.getElementById("water-banner").src="images/water/water1920.png";
-				}
-
-				else {
-					document.getElementById("water-banner").src="images/water/water3835.png";
-				}
-			});
 		</script>
 	</body>
 </html>
