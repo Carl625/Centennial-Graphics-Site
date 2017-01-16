@@ -3,6 +3,11 @@
 	font-weight: 300	!important;
 }
 
+.content {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
 /* website gallery on index.html */
 
  .carousel-slider {
