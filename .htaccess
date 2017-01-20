@@ -1,5 +1,2 @@
 # Error Pages
 ErrorDocument 404 /error_pages/404.html
-
-# Disable directory browsing
-Options All -Indexes
