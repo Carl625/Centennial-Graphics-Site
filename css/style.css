@@ -45,8 +45,8 @@ body {
 }
 
 nav {
-    height: 100px;
-    line-height: 100px;
+	height: 100px;
+	line-height: 100px;
 
 	/* make navbar stick to top of page */
 	position: fixed;
@@ -58,17 +58,17 @@ nav {
 }
 
 nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
-    height: 100px;
-    line-height: 100px;
+	height: 100px;
+	line-height: 100px;
 }
 
 nav .button-collapse i {
-    height: 100px;
-    line-height: 100px;
+	height: 100px;
+	line-height: 100px;
 }
 
 nav .brand-logo {
-    font-size: 1.6rem;
+	font-size: 1.6rem;
 }
 
 @media only screen and (min-width: 601px) {
@@ -79,9 +79,9 @@ nav .brand-logo {
 	}
 
 	nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
-        height: 100px;
-        line-height: 100px;
-    }
+        	height: 100px;
+        	line-height: 100px;
+	}
 }
 
 nav ul {
