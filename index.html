@@ -45,29 +45,33 @@
 
 	<body>
 		<!--NavBar Start-->
-		<nav>
-			<div class="nav-wrapper grey darken-3">
-				<!--Logo-->
-				<a href="/" class="brand-logo"><img id="logo" src="images/logos/AV-Red.png"></a>
+		<div class="navbar-fixed">
+			<nav>
+				<div class="nav-wrapper grey darken-3">
+					<!--Logo-->
+					<a href="/" class="brand-logo"><img id="logo" src="/images/logos/AV-Red.png"></a>
 
-				<!--Desktop Bar-->
-				<ul class="center hide-on-small-only">
-					<li class="active"><a href="/">HOME</a></li>
-					<li><a href="/works/">WORKS</a></li>
-					<li><a href="/about/">ABOUT</a></li>
-				</ul>
-
-				<!--Mobile Menu-->
-				<div class="hide-on-med-and-up">
-					<a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
-					<ul class="side-nav" id="mobile-menu">
-						<li><a href="/">HOME</a></li>
+					<!--Desktop Bar-->
+					<ul class="center hide-on-small-only">
+						<li class="active"><a href="/">HOME</a></li>
 						<li><a href="/works/">WORKS</a></li>
 						<li><a href="/about/">ABOUT</a></li>
 					</ul>
+
+					<!--Mobile Menu (Button)-->
+					<div class="hide-on-med-and-up">
+						<a href="#" data-activates="mobile-menu" class="button-collapse"><i class="material-icons">menu</i></a>
+					</div>
 				</div>
-			</div>
-		</nav>
+			</nav>
+		</div>
+
+		<!--Mobile Menu (Contents)-->
+		<ul class="side-nav" id="mobile-menu">
+			<li><a href="/">HOME</a></li>
+			<li><a href="/works/">WORKS</a></li>
+			<li><a href="/about/">ABOUT</a></li>
+		</ul>
 		<!--NavBar End-->
 
 		<!--Page Start-->

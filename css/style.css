@@ -45,11 +45,9 @@ body {
 }
 
 nav {
+	/* position navbar */
 	height: 100px;
 	line-height: 100px;
-
-	/* make navbar stick to top of page */
-	position: fixed;
 	top: 0;
 	width: 100%;
 
