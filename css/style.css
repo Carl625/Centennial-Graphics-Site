@@ -4,25 +4,11 @@
 }
 
 .content {
-	/* make elements not squish against side of screen */
 	margin-left: 10%;
 	margin-right: 10%;
 }
 
-/* picture gallery on works page */
-
-.horizontal {
-	width: 100%;
-	height: 100%;
-	margin: 0 auto 0 auto;
-	text-align: center;
-}
-
-.horizontal div {
-	display: inline-block;
-}
-
-/* website gallery on home page */
+/* website gallery on index.html */
 
  .carousel-slider {
 	/*width: 80vw !important;*/
@@ -31,7 +17,7 @@
 	margin-right: auto;
 }
 
-/* water.png on home page */
+/* water.png on index.html */
 
 .water-image {
 	/* allows our absolue-positioned text to overlay */
